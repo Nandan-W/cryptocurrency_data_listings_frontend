@@ -59,7 +59,7 @@ const CryptoTable: React.FC<CryptoTableProps> = ({
       <div className="mb-4 flex justify-between items-center">
         <div>
           <p className="text-sm text-gray-600">
-            Last updated: {lastUpdated ? format(lastUpdated, 'PPpp') : 'Never'}
+            Last updated (GMT): {lastUpdated ? format(lastUpdated, 'PPpp') : 'Never'}
           </p>
           {isStale && (
             <p className="text-red-500 text-sm mt-1">

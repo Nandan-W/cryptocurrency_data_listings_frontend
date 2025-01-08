@@ -101,7 +101,7 @@ const Analysis = () => {
 
       {lastUpdated && (
         <p className="text-sm text-gray-600 mt-8">
-          Last updated: {lastUpdated.toLocaleString()}
+          Last updated (GMT): {lastUpdated.toLocaleString()}
         </p>
       )}
     </div>
