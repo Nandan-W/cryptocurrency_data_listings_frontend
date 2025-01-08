@@ -9,7 +9,7 @@ const Analysis = () => {
   useEffect(() => {
     const fetchAnalysis = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/crypto-analysis');
+        const response = await fetch(`{process.env.REACT_APP_BACKEND_URL}/api/crypto-analysis`);
         const result = await response.json();
         
         const data = result.data;

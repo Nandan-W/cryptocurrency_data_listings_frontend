@@ -12,7 +12,7 @@ const DataView = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/crypto-data');
+        const response = await fetch(`{process.env.BACKEND_API_URL}/api/crypto-data`);
         const result = await response.json();
 
         console.log("received data in data view.tsx = " , result);
